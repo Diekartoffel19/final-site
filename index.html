@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lucius' Webseite – Projekte, 3D Art, Webentwicklung und mehr. Entdecke meine neuesten Arbeiten und Skills.">
     <title>Lucius' Webseite</title>
     <link rel="stylesheet" href="src/output.css">
     <link rel="icon" type="image/svg+xml" href="src/assets/favi/app-indicator.svg">
@@ -11,75 +12,71 @@
 <body class="bg-indigo-100 dark:bg-gradient-to-b dark:from-neutral-900 dark:to-neutral-800"> <!--farbe von hintergrund-->
 
 
-  <div>
-    <header class="bg-blue-300 h-36 flex items-center w-full dark:bg-slate-800">
-      <nav class="flex w-full items-center justify-between">
-        <div class="flex flex-col w-full items-center md:flex-row md:justify-between md:items-center">
-          <a href="index.html" class="w-full md:w-auto md:text-left flex justify-center">
-            <strong class=" md:mr-3 text-4xl md:ml-3 text-black dark:text-white max-w-xs break-words w-full block mb-4 mt-2 md:mb-0 md:mt-0">
-              Lucius' Webseite
-            </strong>
+  <header class="bg-blue-300 h-36 flex items-center w-full dark:bg-slate-800">
+    <nav class="flex w-full items-center justify-between" aria-label="Hauptnavigation">
+      <div class="flex flex-col w-full items-center md:flex-row md:justify-between md:items-center">
+        <a href="index.html" class="w-full md:w-auto md:text-left flex justify-center" aria-label="Startseite">
+          <strong class=" md:mr-3 text-4xl md:ml-3 text-black dark:text-white max-w-xs break-words w-full block mb-4 mt-2 md:mb-0 md:mt-0">
+            Lucius' Webseite
+          </strong>
+        </a>
+        <div class="flex space-x-6 text-2xl justify-center w-full md:justify-end md:w-auto md:items-center md:mr-7">
+          <a href="./index.html" role="button" aria-label="Home" class="ml-2 bg-teal-500 dark:bg-gradient-to-r dark:from-indigo-700 dark:to-indigo-900 text-black dark:text-white px-6 py-2 rounded-lg shadow hover:bg-teal-600 dark:hover:bg-indigo-800 transition hover:scale-105 flex items-center">
+            <img src="/src/assets/pictures/house-door (1).svg" alt="Home" class="hidden md:inline w-6 h-6 mr-2 fill-white">
+            Home
           </a>
-          <div class="flex space-x-6 text-2xl justify-center w-full md:justify-end md:w-auto md:items-center md:mr-7">
-            <a href="./index.html" role="button" class="ml-2 bg-teal-500 dark:bg-gradient-to-r dark:from-indigo-700 dark:to-indigo-900 text-black dark:text-white px-6 py-2 rounded-lg shadow hover:bg-teal-600 dark:hover:bg-indigo-800 transition hover:scale-105 flex items-center">
-              <img src="/src/assets/pictures/house-door (1).svg" alt="" class="hidden md:inline w-6 h-6 mr-2 fill-white">
-              Home
-            </a>
-            <a href="ueber mich.html" role="button" class="bg-teal-500 dark:bg-gradient-to-r dark:from-indigo-700 dark:to-indigo-900 text-black dark:text-white px-6 py-2 rounded-lg shadow hover:bg-teal-600 dark:hover:bg-indigo-800 transition hover:scale-105 flex items-center">
-              <img src="/src/assets/pictures/file-person.svg" alt="" class="hidden md:inline w-6 h-6 mr-2 fill-white">
-              Über
-            </a>
-            <a href="Projekte" role="button" class=" bg-teal-500 dark:bg-gradient-to-r dark:from-indigo-700 dark:to-indigo-900 text-black dark:text-white pl-6 pr-5 py-2 rounded-lg shadow hover:bg-teal-600 dark:hover:bg-indigo-800 transition hover:scale-105 flex items-center">
-              <img src="/src/assets/pictures/book.svg" alt="" class="hidden md:inline w-6 h-6 mr-2 fill-white">
-              Projekte
-            </a>
-          </div>
+          <a href="ueber-mich.html" role="button" aria-label="Über mich" class="bg-teal-500 dark:bg-gradient-to-r dark:from-indigo-700 dark:to-indigo-900 text-black dark:text-white px-6 py-2 rounded-lg shadow hover:bg-teal-600 dark:hover:bg-indigo-800 transition hover:scale-105 flex items-center">
+            <img src="/src/assets/pictures/file-person.svg" alt="Über mich" class="hidden md:inline w-6 h-6 mr-2 fill-white">
+            Über
+          </a>
+          <a href="projekte.html" role="button" aria-label="Projekte" class=" bg-teal-500 dark:bg-gradient-to-r dark:from-indigo-700 dark:to-indigo-900 text-black dark:text-white pl-6 pr-5 py-2 rounded-lg shadow hover:bg-teal-600 dark:hover:bg-indigo-800 transition hover:scale-105 flex items-center">
+            <img src="/src/assets/pictures/book.svg" alt="Projekte" class="hidden md:inline w-6 h-6 mr-2 fill-white">
+            Projekte
+          </a>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="bg-amber-950 h-24 flex justify-center items-center">
+      <p class="text-3xl text-white">Seite in arbeit</p>
+    </section>
+    <section aria-labelledby="projekte-heading">
+      <div class="flex justify-center">
+        <h2 id="projekte-heading" class="text-black dark:text-white text-5xl m-6 text-center">Meine Letzten Projekte</h2>
+      </div>
+      <div>
+        <h3 class="flex justify-center font-bold text-3xl dark:text-white text-black mt-8">Getränke Werbung</h3>
+        <figure class="w-9/12 mx-auto mt-5 xl:w-6/12">
+          <a href="projects/Dose" aria-label="Mehr zu Getränke Werbung">
+            <img src="/src/assets/pictures/Dose.webp" class="w-full hover:scale-[101%] transition duration-[400ms]" alt="Getränke Werbung Projekt in Blender">
+          </a>
+          <figcaption class="text-black dark:text-white text-xl mt-5">Ein Werbe Shot, den ich in Blender gemacht habe (in progress).</figcaption>
+        </figure>
+        <figure class="w-9/12 mx-auto mt-20 xl:w-6/12">
+          <h3 class="flex justify-center font-bold text-3xl dark:text-white text-black mt-8">Ein gemütlicher 3D Raum</h3>
+          <a href="projects/Raum" aria-label="Mehr zu gemütlicher 3D Raum">
+            <img src="/src/assets/pictures/cozy raum.webp" class="w-full hover:scale-[101%] transition duration-[400ms] mt-6" alt="Gemütlicher 3D Raum Projekt in Blender">
+          </a>
+          <figcaption class="text-black dark:text-white text-xl mt-5 mb-12">Mein erstes Blender Projekt. Einfachheitshalber habe ich die Texturen so einfach wie möglich gehalten.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
   </div>
 
-  <div class="bg-amber-950 h-24 flex justify-center items-center">
-    <p class="text-3xl text-white">Seite in arbeit</p>
-  </div>
-
-  <div> <!--Bilder-->
-    <div class="flex justify-center">
-      <h2 class="text-black dark:text-white text-5xl m-6 text-center">Meine Letzten Projekte</h2>
-    </div>
-
-
-    <div class="">
-      <h3 class="flex justify-center font-bold text-3xl dark:text-white text-black mt-8">Getränke Werbung</h3>
-      <figure class="w-9/12 mx-auto mt-5 xl:w-6/12">
-        <a href="projects/Dose">
-          <img src="/src/assets/pictures/Dose.webp" class="w-full hover:scale-[101%] transition duration-[400ms]" alt="">
-        </a>
-        <figcaption class="text-black dark:text-white text-xl mt-5">Ein Werbe Shot, den ich in Blender gemacht habe (in progress).</figcaption>
-      </figure>
-
-      <figure class="w-9/12 mx-auto mt-20 xl:w-6/12">
-        <h3 class="flex justify-center font-bold text-3xl dark:text-white text-black mt-8">Ein gemütlicher 3D Raum</h3>
-        <a href="projects/Raum">
-          <img src="/src/assets/pictures/cozy raum.webp" class="w-full hover:scale-[101%] transition duration-[400ms] mt-6" alt="">
-        </a>
-        <figcaption class="text-black dark:text-white text-xl mt-5 mb-12">Mein erstes Blender Projekt. Einfachheitshalber habe ich die Texturen so einfach wie möglich gehalten.</figcaption>
-      </figure>
-   
-
-
-
-  </div>
-
-  <div>
-    <footer class="bg-blue-300 h-32 flex items-center w-full dark:bg-slate-800 justify-between">
-      <p class="flex flex-col ml-5 dark:text-white text-black">Lucius Webseite</p>
-      <a target="_blank" href="https://github.com/Diekartoffel19?tab=overview&from=2025-06-01&to=2025-06-26">
-        <img src="/src/assets/pictures/github-mark.svg" alt="" class="w-12 h-12 invert mr-4">
-
-      </a>
-
-    </footer>
-  </div>
+  <footer class="bg-blue-300 h-32 flex items-center w-full dark:bg-slate-800 justify-between">
+    <p class="flex flex-col ml-5 dark:text-white text-black">Lucius Webseite</p>
+    <a target="_blank" rel="noopener" href="https://github.com/Diekartoffel19?tab=overview&from=2025-06-01&to=2025-06-26" aria-label="GitHub Profil von Lucius">
+      <img src="/src/assets/pictures/github-mark.svg" alt="GitHub Logo" class="w-12 h-12 invert mr-4">
+    </a>
+  </footer>
 </body>
 </html>

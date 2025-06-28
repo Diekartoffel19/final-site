@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+
+.custom-hover:hover {
+    scale: 101%;
+}
