@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cooler 3D Effekt mit Tailwind CSS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Stellt sicher, dass die preserve-3d Utility funktioniert. 
+      In neueren Tailwind Versionen ist dies oft schon dabei.
+    */
+    .preserve-3d {
+      transform-style: preserve-3d;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 flex items-center justify-center h-screen overflow-hidden">
+
+  <div id="card-container" class="w-96 h-60 rounded-2xl [perspective:1200px]">
+    
+    <div id="card" class="relative w-full h-full rounded-2xl shadow-2xl preserve-3d 
+                         transition-transform duration-300 ease-out">
+      
+      <div class="absolute inset-0 bg-cover bg-center rounded-2xl" 
+           style="background-image: url('https://images.unsplash.com/photo-1554232456-8727aae0cfa4?q=80&w=2574&auto=format&fit=crop');">
+      </div>
+
+      <div id="shine" class="absolute inset-0 rounded-2xl opacity-80"
+           style="background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(255, 255, 255, 0.2), transparent 50%);">
+      </div>
+
+      <div class="absolute inset-0 p-8 flex flex-col justify-between items-start preserve-3d">
+        
+        <h1 id="title" class="text-white text-4xl font-bold drop-shadow-lg 
+                             transform [transform:translateZ(40px)]">
+          3D Effekt
+        </h1>
+        
+        <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white/80
+                               transform [transform:translateZ(80px)]"
+             fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v11.494m-9-5.747h18" />
+        </svg>
+
+        <p class="text-white/70 font-semibold self-end transform [transform:translateZ(60px)]">
+          Tailwind CSS
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    const cardContainer = document.getElementById('card-container');
+    const card = document.getElementById('card');
+    const shine = document.getElementById('shine');
+
+    // Maximale Drehung der Karte in Grad
+    const maxRotate = 15;
+
+    // Event-Listener für Mausbewegungen auf dem Container
+    cardContainer.addEventListener('mousemove', (e) => {
+      const rect = cardContainer.getBoundingClientRect();
+      // Berechne Mausposition relativ zur Kartenmitte
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+
+      // Berechne den Rotationsgrad. Der Wert wird von -maxRotate bis +maxRotate gehen.
+      // Die Drehung um die Y-Achse hängt von der X-Position der Maus ab.
+      const rotateY = (x / (rect.width / 2)) * maxRotate;
+      // Die Drehung um die X-Achse hängt von der Y-Position der Maus ab (invertiert).
+      const rotateX = (y / (rect.height / 2)) * -maxRotate;
+
+      // Wende die Transformation auf die Karte an
+      card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+      
+      // Bewege den Glanz-Effekt
+      const mouseX = e.clientX - rect.left;
+      const mouseY = e.clientY - rect.top;
+      shine.style.setProperty('--x', `${(mouseX / rect.width) * 100}%`);
+      shine.style.setProperty('--y', `${(mouseY / rect.height) * 100}%`);
+    });
+
+    // Setzt die Karte zurück, wenn die Maus den Container verlässt
+    cardContainer.addEventListener('mouseleave', () => {
+      card.style.transform = 'rotateX(0deg) rotateY(0deg)';
+      // Optional: Glanz-Effekt ausblenden oder zentrieren
+      shine.style.setProperty('--x', `50%`);
+      shine.style.setProperty('--y', `50%`);
+    });
+  </script>
+
+</body>
+</html>
