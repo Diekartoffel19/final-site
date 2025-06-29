@@ -13,21 +13,23 @@
 
   <header class="bg-gradient-to-r from-blue-400 to-teal-400 dark:from-slate-800 dark:to-indigo-900 shadow-lg rounded-b-3xl mb-8">
     <nav class="flex w-full items-center justify-between max-w-5xl mx-auto py-6 px-4 flex-col gap-4 sm:flex-row sm:gap-0" aria-label="Hauptnavigation">
-      <span class="text-3xl font-bold text-indigo-900 dark:text-white tracking-tight drop-shadow-lg text-center sm:text-left">Lucius' Webseite</span>
+        <a href="index.html">
+        <span class="text-3xl font-bold text-indigo-900 dark:text-white tracking-tight drop-shadow-lg text-center sm:text-left">Lucius' Webseite</span>
+      </a>
       <div class="flex flex-col items-center gap-3 font-semibold text-lg sm:flex-row sm:gap-4">
-        <a href="./index.html" aria-label="Home" class="font-semibold bg-gradient-to-br px-5 from-indigo-100 to-indigo-300 py-2 rounded-lg dark:from-indigo-900 dark:to-indigo-800 text-indigo-900 dark:text-white hover:shadow-2xl  focus:outline-1 transition-all focus:outline-offset-1 hover:dark:bg-slate-600 hover:bg-gray-500 ease-in-out hover:-translate-y-1">Home</a>
-        <a href="ueber-mich.html" aria-label="Über" class="font-semibold bg-gradient-to-br px-5 from-indigo-100 to-indigo-300 py-2 rounded-lg dark:from-indigo-900 dark:to-indigo-800 text-indigo-900 dark:text-white hover:shadow-2xl  focus:outline-1 transition-all focus:outline-offset-1 hover:dark:bg-slate-600 hover:bg-gray-500 ease-in-out hover:-translate-y-1">Über mich</a>
-        <a href="projekte.html" aria-label="Projekte" class="font-semibold bg-gradient-to-br px-5 from-indigo-100 to-indigo-300 py-2 rounded-lg dark:from-indigo-900 dark:to-indigo-800 text-indigo-900 dark:text-white hover:shadow-2xl  focus:outline-1 transition-all focus:outline-offset-1 hover:dark:bg-slate-600 hover:bg-gray-500 ease-in-out hover:-translate-y-1">Projekte</a>
+        <a href="./index.html" id="delayed-home" aria-label="Home" class="hover:from-indigo-200 hover:to-indigo-300 bg-gradient-to-r dark:hover:from-blue-900 dark:hover:to-slate-600 dark:from-blue-900 dark:to-indigo-900 hover:rotate-6 font-semibold  px-5 from-indigo-300 to-indigo-400 py-2 rounded-lg text-indigo-900 dark:text-white hover:shadow-2xl focus:outline-2 transition-all focus:outline-offset-1 outline-indigo-950 ease-in-out hover:-translate-y-1">Home</a>
+        <a href="ueber-mich.html" id="delayed-ueber" aria-label="Über" class="hover:from-indigo-300 hover:to-violet-300 font-semibold bg-gradient-to-r dark:from-indigo-900 dark:hover:from-slate-600 dark:hover:to-indigo-700 dark:to-sky-900 px-5 from-indigo-400 to-violet-400 py-2 rounded-lg text-indigo-900 dark:text-white hover:shadow-2xl focus:outline-2 transition-all focus:outline-offset-1 ease-in-out outline-indigo-950 hover:-translate-y-1">Über mich</a>
+        <a href="projekte.html" id="delayed-projekte" aria-label="Projekte" class="hover:from-violet-300 hover:to-purple-200 dark:hover:from-slate-700 dark:hover:to-sky-900 dark:from-sky-900 dark:to-sky-800 hover:-rotate-6 font-semibold bg-gradient-to-r px-5 from-violet-400 to-purple-300 py-2 rounded-lg text-indigo-900 dark:text-white hover:shadow-2xl transition-all focus:outline-2 focus:outline-offset-2 ease-in-out hover:-translate-y-1 outline-indigo-950">Projekte</a>
       </div>
     </nav>
   </header>
 
   <main class="flex flex-col items-center px-2">
     <section class="w-full max-w-4xl mx-auto mt-8">
-      <div class="bg-gradient-to-tl dark:from-slate-900 dark:to-indigo-900 rounded-3xl shadow-2xl p-10 flex flex-col items-center mb-12 border border-slate-200 dark:border-slate-700">
+      <div class="bg-gradient-to-t dark:from-slate-900 dark:to-indigo-950 from-teal-100 to-indigo-200 rounded-3xl shadow-2xl p-10 flex flex-col items-center mb-12 border border-slate-200 dark:border-slate-700">
         <h1 class="text-4xl text-indigo-950 font-extrabold md:text-5xl dark:text-indigo-200 mb-6 text-center tracking-tight">Meine letzten Projekte</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
-          <div class="bg-gradient-to-br from-teal-100 to-indigo-100 dark:from-slate-800 dark:to-indigo-900 rounded-2xl shadow-xl p-6 flex flex-col items-center ease-in-out hover:scale-[1.03] hover:shadow-2xl transition-all duration-300">
+          <div class="bg-gradient-to-br from-teal-100 to-indigo-200 dark:from-slate-800 dark:to-indigo-900 rounded-2xl shadow-xl p-6 flex flex-col items-center ease-in-out hover:scale-[1.03] hover:shadow-2xl transition-all duration-300">
             <a href="getraenke_projekt.html" title="Getränke Werbung in Blender" aria-label="Dosen Werbung" class="w-full flex flex-col items-center">
               <img src="src/assets/pictures/Dose.webp" alt="Bild von Dose" class="w-full rounded-2xl hover:scale-105 transition-all duration-300 ease-in-out mb-2.5">
               <h3 class="text-xl font-bold text-indigo-800 dark:text-indigo-300 mb-2.5">Eine Getränke Werbung in Blender</h3>
@@ -36,7 +38,7 @@
 
           </div>
 
-          <div class="bg-gradient-to-bl from-teal-100 to-indigo-100 dark:from-slate-800 dark:to-indigo-900 rounded-2xl shadow-xl p-6 flex flex-col items-center ease-in-out hover:scale-[1.03] hover:shadow-2xl transition-all duration-300">
+          <div class="bg-gradient-to-bl from-teal-100 to-indigo-200 dark:from-slate-800 dark:to-indigo-900 rounded-2xl shadow-xl p-6 flex flex-col items-center ease-in-out hover:scale-[1.03] hover:shadow-2xl transition-all duration-300">
             <a href="meine_seite.html" title="Meine Seite" aria-label="Dosen Werbung" class="w-full flex flex-col items-center">
               <img src="src/assets/pictures/screenshot.webp" alt="Bild von Dose" class="w-full rounded-2xl hover:scale-105 transition-all duration-300 ease-in-out mb-2.5">
               <h3 class="text-xl font-bold text-indigo-800 dark:text-indigo-300 mb-2.5">Meine Eigene Webseite</h3>
@@ -54,27 +56,7 @@
 
 
 
-  <!--  <div class="bg-white/90 dark:bg-slate-900 rounded-3xl shadow-2xl p-10 flex flex-col items-center mb-12 border border-slate-200 dark:border-slate-700">
-      <h2 class="text-4xl md:text-5xl font-extrabold text-indigo-900 dark:text-indigo-100 mb-6 text-center tracking-tight">Meine Letzten Projekte</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
-        <div class="bg-gradient-to-br from-teal-100 to-indigo-100 dark:from-slate-800 dark:to-indigo-900 rounded-2xl shadow-xl p-6 flex flex-col items-center hover:scale-[1.03] hover:shadow-2xl transition-all duration-300">
-          <a href="projects/Dose" aria-label="Mehr zu Getränke Werbung" class="w-full flex flex-col items-center">
-            <img src="/src/assets/pictures/Dose.webp" class="w-full rounded-xl shadow-lg mb-4 hover:scale-105 transition-transform duration-300" alt="Getränke Werbung Projekt in Blender">
-            <h3 class="text-2xl font-bold text-indigo-800 dark:text-indigo-200 mb-2">Getränke Werbung</h3>
-            <figcaption class="text-indigo-900 dark:text-indigo-100 text-lg text-center">Ein Werbe Shot, den ich in Blender gemacht habe (in progress).</figcaption>
-          </a>
-        </div>
-        <div class="bg-gradient-to-br from-teal-100 to-indigo-100 dark:from-slate-800 dark:to-indigo-900 rounded-2xl shadow-xl p-6 flex flex-col items-center hover:scale-[1.03] hover:shadow-2xl transition-all duration-300">
-          <a href="projects/Raum" aria-label="Mehr zu gemütlicher 3D Raum" class="w-full flex flex-col items-center">
-            <img src="/src/assets/pictures/cozy raum.webp" class="w-full rounded-xl shadow-lg mb-4 hover:scale-105 transition-transform duration-300" alt="Gemütlicher 3D Raum Projekt in Blender">
-            <h3 class="text-2xl font-bold text-indigo-800 dark:text-indigo-200 mb-2">Ein gemütlicher 3D Raum</h3>
-            <figcaption class="text-indigo-900 dark:text-indigo-100 text-lg text-center">Mein erstes Blender Projekt. Einfachheitshalber habe ich die Texturen so einfach wie möglich gehalten.</figcaption>
-          </a>
-        </div>
-      </div>
-    </div>-->
-
-  <footer class="bg-gradient-to-r from-blue-300 to-teal-200 dark:from-slate-800 dark:to-indigo-900 rounded-t-3xl shadow-inner mt-16 py-6 flex items-center justify-between w-full max-w-5xl mx-auto px-6">
+  <footer class="bg-gradient-to-r from-blue-400 to-teal-400 dark:from-slate-800 dark:to-indigo-900 rounded-t-3xl shadow-inner mt-16 py-6 flex items-center justify-between w-full max-w-5xl mx-auto px-6">
     <span class="text-indigo-900 dark:text-white font-semibold">Lucius Webseite</span>
     <div class="flex items-center space-x-4">
       <a target="_blank" href="https://github.com/Diekartoffel19?tab=overview&from=2025-06-01&to=2025-06-26">
@@ -87,5 +69,24 @@
       </a>
     </div>
   </footer>
+
+
+<script>
+  [
+    'delayed-home',
+    'delayed-ueber',
+    'delayed-projekte'
+  ].forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) {
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        setTimeout(() => {
+          window.location.href = this.href;
+        }, 300); // 500ms Delay
+      });
+    }
+  });
+</script>
 </body>
 </html>
