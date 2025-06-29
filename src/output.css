@@ -1634,6 +1634,16 @@
       }
     }
   }
+  .dark\:hover\:from-indigo-700 {
+    @media (prefers-color-scheme: dark) {
+      &:hover {
+        @media (hover: hover) {
+          --tw-gradient-from: var(--color-indigo-700);
+          --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+        }
+      }
+    }
+  }
   .dark\:hover\:from-indigo-800 {
     @media (prefers-color-scheme: dark) {
       &:hover {
