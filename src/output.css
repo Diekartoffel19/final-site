@@ -835,24 +835,6 @@
       line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
-  .md\:hover\:-rotate-6 {
-    @media (width >= 48rem) {
-      &:hover {
-        @media (hover: hover) {
-          rotate: calc(6deg * -1);
-        }
-      }
-    }
-  }
-  .md\:hover\:rotate-6 {
-    @media (width >= 48rem) {
-      &:hover {
-        @media (hover: hover) {
-          rotate: 6deg;
-        }
-      }
-    }
-  }
   .dark\:border-indigo-700 {
     @media (prefers-color-scheme: dark) {
       border-color: var(--color-indigo-700);
