@@ -7,9 +7,8 @@
     <title>Lucius' Webseite</title>
     <link rel="stylesheet" href="src/output.css">
     <link rel="icon" type="image/svg+xml" href="src/assets/favi/app-indicator.svg">
-
 </head>
-<body class="bg-indigo-100 dark:bg-gradient-to-b dark:from-neutral-900 dark:to-neutral-800"> <!--farbe von hintergrund-->
+<body class="bg-indigo-100 dark:bg-gradient-to-b dark:from-neutral-900 dark:to-neutral-800 min-h-screen flex flex-col">
 
   <header class="bg-gradient-to-r from-blue-400 to-teal-400 dark:from-slate-800 dark:to-indigo-900 shadow-lg rounded-b-3xl mb-8">
     <nav class="flex w-full items-center justify-between max-w-5xl mx-auto py-6 px-4 flex-col gap-4 sm:flex-row sm:gap-0" aria-label="Hauptnavigation">
@@ -29,8 +28,7 @@
     </nav>
   </header>
 
-
-  <main class="flex flex-col items-center px-2">
+  <main class="flex flex-col items-center px-2 flex-grow">
     <section class="w-full max-w-4xl mx-auto mt-8">
       <div class="bg-gradient-to-t dark:from-slate-900 dark:to-indigo-950 from-teal-100 to-indigo-200 rounded-3xl shadow-2xl p-10 flex flex-col items-center mb-12 border border-slate-200 dark:border-slate-700">
         <h1 class="text-4xl text-indigo-950 font-extrabold md:text-5xl dark:text-indigo-200 mb-6 text-center tracking-tight">Meine letzten Projekte</h1>
@@ -41,7 +39,6 @@
               <h3 class="text-xl font-bold text-indigo-800 dark:text-indigo-300 mb-2.5">Ein online Hangman</h3>
               <figcaption class="text-indigo-900 dark:text-indigo-200 text-lg text-center">Ein einfaches Spiel das ich mit Python gemacht habe.</figcaption>
             </a>
-
           </div>
 
           <div class="bg-gradient-to-bl from-teal-100 to-indigo-200 dark:from-slate-800 dark:to-indigo-900 rounded-2xl shadow-xl p-6 flex flex-col items-center ease-in-out hover:scale-[1.03] hover:shadow-2xl transition-all duration-300">
@@ -50,19 +47,13 @@
               <h3 class="text-xl font-bold text-indigo-800 dark:text-indigo-300 mb-2.5">Meine Eigene Webseite</h3>
               <figcaption class="text-indigo-900 dark:text-indigo-200 text-lg text-center">Diese Webseite auf der sie sich gerade befinden, ist meine erste eigene Webseite, die ich von null auf erstellt habe.</figcaption>
             </a>
-
           </div>
         </div>
       </div>
     </section>
   </main>
 
-
-
-
-
-
-  <footer class="bg-gradient-to-r from-blue-400 to-teal-400 dark:from-slate-800 dark:to-indigo-900 rounded-t-3xl shadow-inner mt-16 py-6 flex items-center justify-between w-full max-w-5xl mx-auto px-6">
+  <footer class="bg-gradient-to-r from-blue-400 to-teal-400 dark:from-slate-800 dark:to-indigo-900 rounded-t-3xl shadow-inner py-6 flex items-center justify-between w-full max-w-5xl mx-auto px-6">
     <span class="text-indigo-900 dark:text-white font-semibold">Lucius Webseite</span>
     <div class="flex items-center space-x-4">
       <a href="mailto:lucius.balke@outlook.com" class="text-indigo-900 dark:text-indigo-200 text-lg text-center hover:-translate-y-1.5 hover:underline transition duration-150">Kontakt</a>
@@ -72,14 +63,10 @@
       <a href="https://makerworld.com/en/@Diekartoffel" title="Mein Makerworld">
         <svg viewBox="0 0 28 28" class="w-10 h-10 text-black dark:text-white" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="BambuLab Logo">
           <path d="M27.2867 2.68142L20.8492 0.160571L20.4386 0L20.0257 0.160571L13.9977 2.51861L7.96978 0.160571L7.56139 0L7.15188 0.160571L0.713275 2.68142L0 2.96102V25.0401L0.713275 25.3186L7.15188 27.8394L7.56139 28L7.97091 27.8394L14 25.4814L20.028 27.8394L20.4386 28L20.8492 27.8394L27.2867 25.3186L28 25.0401V2.96102L27.2867 2.68142ZM20.4386 1.20372L26.8772 3.7257V12.8356L20.4386 10.3158V1.20372ZM14.4095 13.8787L20.4386 11.5207L26.4677 13.8787L26.7748 13.9989L26.4677 14.119L20.4386 16.4771L14.4095 14.119L14.1024 13.9989L14.4095 13.8787ZM7.56139 1.20372L14 3.7257V12.8356L7.56139 10.3147V1.20372ZM1.53343 13.8787L7.56139 11.5207L13.5905 13.8787L13.8976 13.9989L13.5905 14.119L7.56139 16.4771L1.53343 14.119L1.22629 13.9989L1.53343 13.8787ZM1.12504 24.2732V15.1588L7.56365 17.6785V26.7895L1.12504 24.2732ZM14.0022 24.2732V15.1588L20.4409 17.6785V26.7895L14.0022 24.2732Z" fill="currentColor"></path>
-        
         </svg>
-      
       </a>
-    
     </div>
   </footer>
-
 
 <script>
   // Delayed navigation
