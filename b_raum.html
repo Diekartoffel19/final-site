@@ -15,17 +15,21 @@
 
   <header class="bg-gradient-to-r from-blue-400 to-teal-400 dark:from-slate-800 dark:to-indigo-900 shadow-lg rounded-b-3xl mb-8">
     <nav class="flex w-full items-center justify-between max-w-5xl mx-auto py-6 px-4 flex-col gap-4 sm:flex-row sm:gap-0" aria-label="Hauptnavigation">
-        <a href="index.html">
+      <a href="index.html">
         <span class="text-3xl font-bold text-indigo-900 dark:text-white tracking-tight drop-shadow-lg text-center sm:text-left">Lucius' Webseite</span>
       </a>
-      <div class="flex flex-col items-center gap-3 font-semibold text-lg sm:flex-row sm:gap-4">
-        <a href="./index.html" id="delayed-home" aria-label="Home" class="hover:from-indigo-200 hover:to-indigo-300 bg-gradient-to-r dark:hover:from-blue-900 dark:hover:to-slate-600 dark:from-blue-900 dark:to-indigo-900 hover:rotate-6 font-semibold  px-5 from-indigo-300 to-indigo-400 py-2 rounded-lg text-indigo-900 dark:text-white hover:shadow-2xl focus:outline-2 transition-all focus:outline-offset-1 outline-indigo-950 ease-in-out hover:-translate-y-1">Home</a>
+      <!-- Burger Button -->
+      <button id="burger-btn" class="sm:hidden flex items-center px-3 py-2 border rounded text-indigo-900 dark:text-white border-indigo-400 dark:border-indigo-700 focus:outline-none" aria-label="Menü öffnen">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <!-- Navigation Links -->
+      <div id="nav-links" class="flex-col items-center gap-3 font-semibold text-lg sm:flex-row sm:gap-4 hidden sm:flex">
+        <a href="./index.html" id="delayed-home" aria-label="Home" class="hover:from-indigo-200 hover:to-indigo-300 bg-gradient-to-r dark:hover:from-blue-900 dark:hover:to-slate-600 dark:from-blue-900 dark:to-indigo-900 md:hover:rotate-6 font-semibold  px-5 from-indigo-300 to-indigo-400 py-2 rounded-lg text-indigo-900 dark:text-white hover:shadow-2xl focus:outline-2 transition-all focus:outline-offset-1 outline-indigo-950 ease-in-out hover:-translate-y-1">Home</a>
         <a href="ueber-mich.html" id="delayed-ueber" aria-label="Über" class="hover:from-indigo-300 hover:to-violet-300 font-semibold bg-gradient-to-r dark:from-indigo-900 dark:hover:from-slate-600 dark:hover:to-indigo-700 dark:to-sky-900 px-5 from-indigo-400 to-violet-400 py-2 rounded-lg text-indigo-900 dark:text-white hover:shadow-2xl focus:outline-2 transition-all focus:outline-offset-1 ease-in-out outline-indigo-950 hover:-translate-y-1">Über mich</a>
-        <a href="projekte.html" id="delayed-projekte" aria-label="Projekte" class="hover:from-violet-300 hover:to-purple-200 dark:hover:from-indigo-700 dark:hover:to-sky-900 dark:from-sky-900 dark:to-sky-800 hover:-rotate-6 font-semibold bg-gradient-to-r px-5 from-violet-400 to-purple-300 py-2 rounded-lg text-indigo-900 dark:text-white hover:shadow-2xl transition-all focus:outline-2 focus:outline-offset-2 ease-in-out hover:-translate-y-1 outline-indigo-950">Projekte</a>
+        <a href="projekte.html" id="delayed-projekte" aria-label="Projekte" class="hover:from-violet-300 hover:to-purple-200 dark:hover:from-indigo-700 dark:hover:to-sky-900 dark:from-sky-900 dark:to-sky-800 md:hover:-rotate-6 font-semibold bg-gradient-to-r px-5 from-violet-400 to-purple-300 py-2 rounded-lg text-indigo-900 dark:text-white hover:shadow-2xl transition-all focus:outline-2 focus:outline-offset-2 ease-in-out hover:-translate-y-1 outline-indigo-950">Projekte</a>
       </div>
     </nav>
   </header>
-
 
 
   <main class="flex-1 py-10 px-4 max-w-6xl mx-auto">
@@ -46,29 +50,42 @@
 
 
 
-  <footer class="bg-gradient-to-r from-blue-400 to-teal-400 dark:from-slate-800 dark:to-indigo-900 rounded-t-3xl shadow-inner mt-16 py-6 flex items-center justify-between w-full max-w-5xl mx-auto px-6">
-    <span class="text-indigo-900 dark:text-white font-semibold">Lucius Webseite</span>
-    <div class="flex items-center space-x-4">
-      <a target="_blank" href="https://github.com/Diekartoffel19?tab=overview&from=2025-06-01&to=2025-06-26">
-        <img src="/src/assets/pictures/github-mark.svg" alt="Github Logo" title="Mein Github" class="w-10 h-10 invert dark:invert-0">
-      </a>
-      <a href="https://makerworld.com/en/@Diekartoffel" title="Mein Makerworld">
-        <svg viewBox="0 0 28 28" class="w-10 h-10 text-black dark:text-white" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="BambuLab Logo">
-          <path d="M27.2867 2.68142L20.8492 0.160571L20.4386 0L20.0257 0.160571L13.9977 2.51861L7.96978 0.160571L7.56139 0L7.15188 0.160571L0.713275 2.68142L0 2.96102V25.0401L0.713275 25.3186L7.15188 27.8394L7.56139 28L7.97091 27.8394L14 25.4814L20.028 27.8394L20.4386 28L20.8492 27.8394L27.2867 25.3186L28 25.0401V2.96102L27.2867 2.68142ZM20.4386 1.20372L26.8772 3.7257V12.8356L20.4386 10.3158V1.20372ZM14.4095 13.8787L20.4386 11.5207L26.4677 13.8787L26.7748 13.9989L26.4677 14.119L20.4386 16.4771L14.4095 14.119L14.1024 13.9989L14.4095 13.8787ZM7.56139 1.20372L14 3.7257V12.8356L7.56139 10.3147V1.20372ZM1.53343 13.8787L7.56139 11.5207L13.5905 13.8787L13.8976 13.9989L13.5905 14.119L7.56139 16.4771L1.53343 14.119L1.22629 13.9989L1.53343 13.8787ZM1.12504 24.2732V15.1588L7.56365 17.6785V26.7895L1.12504 24.2732ZM14.0022 24.2732V15.1588L20.4409 17.6785V26.7895L14.0022 24.2732Z" fill="currentColor"></path>
-        </svg>
-      </a>
-    </div>
-  </footer>
-
-
 <script>
-  document.getElementById('delayed-link').addEventListener('click', function(e) {
-    e.preventDefault();
-    setTimeout(() => {
-      window.location.href = this.href;
-    }, 300); // 500ms Delay
+  // Delayed navigation
+  [
+    'delayed-home',
+    'delayed-ueber',
+    'delayed-projekte'
+  ].forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) {
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        setTimeout(() => {
+          window.location.href = this.href;
+        }, 300);
+      });
+    }
   });
+
+  // Burger menu
+  const burgerBtn = document.getElementById('burger-btn');
+  const navLinks = document.getElementById('nav-links');
+  if (burgerBtn && navLinks) {
+    burgerBtn.addEventListener('click', function() {
+      navLinks.classList.toggle('hidden');
+      navLinks.classList.toggle('flex');
+      navLinks.classList.toggle('absolute');
+      navLinks.classList.toggle('top-20');
+      navLinks.classList.toggle('right-4');
+      navLinks.classList.toggle('bg-white');
+      navLinks.classList.toggle('dark:bg-slate-900');
+      navLinks.classList.toggle('rounded-xl');
+      navLinks.classList.toggle('shadow-2xl');
+      navLinks.classList.toggle('p-6');
+      navLinks.classList.toggle('z-50');
+    });
+  }
 </script>
-  </div>
 </body>
 </html>
