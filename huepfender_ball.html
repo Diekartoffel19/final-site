@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucius' Projekte</title>
+    <meta name="description" content="Lucius' Webseite – Lucius' Erster 3D Render">
+    <title>Lucius' Webseite</title>
     <link rel="stylesheet" href="src/output.css">
     <link rel="icon" type="image/svg+xml" href="src/assets/favi/app-indicator.svg">
-    <meta name="description" content="Lucius' Projekte im Laufe der Zeit">
+    <meta name="description" content="Lucius beschribt seine Leidenschft für den 3D Druck">
 
 </head>
 <body class="bg-indigo-100 dark:bg-gradient-to-b dark:from-neutral-900 dark:to-neutral-800"> <!--farbe von hintergrund-->
-
   <header class="bg-gradient-to-r from-blue-400 to-teal-400 dark:from-slate-800 dark:to-indigo-900 shadow-lg rounded-b-3xl mb-8">
     <nav class="flex w-full items-center justify-between max-w-5xl mx-auto py-6 px-4 flex-col gap-4 sm:flex-row sm:gap-0" aria-label="Hauptnavigation">
       <a href="index.html">
@@ -30,54 +30,23 @@
   </header>
 
 
+  <main class="flex-1 py-10 px-4 max-w-6xl mx-auto">
 
-  <main class="py-10 px-4 max-w-6xl mx-auto">
-    <h2 class="text-center mb-4 text-3xl font-bold text-indigo-900 dark:text-indigo-300">Meine Projekte</h2>
-
-    <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-        <a href="huepfender_ball.html">
-        <div title="Musik Animation" class="bg-white dark:bg-slate-700 rounded-2xl hover:bg-slate-600 transition delay-75 duration-500 hover:-translate-y-3 ease-in-out shadow-2xl p-6 flex flex-col items-center">
-          <img src="src/assets/pictures/0020.webp" alt="Bild von Webseite" class="w-3xl h-3xl rounded-2xl">
-          <h3 class="text-xl font-semibold mb-2 text-indigo-800 dark:text-indigo-200">Musik Animation</h3>
-          <p class="text-indigo-900 dark:text-indigo-100 ">Eine Animation die Musik visualisiert.</p>
+    <section class="bg-white/90 dark:bg-neutral-900 rounded-2xl shadow-xl p-8 flex flex-col items-center w-full max-w-4xl">
+        <h1 class="text-3xl font-bold text-indigo-950 dark:text-indigo-100">Musik Animation</h1>
+        <p class="text-indigo-950 dark:text-indigo-100 mt-7 mb-3">Diese Animation wurde mit Blender erstellt. Der Ball folgt einem vordefinierten Pfad, der mithilfe eines Blender-Plug-ins erzeugt wurde. Als Musik kann jedes MIDI-Dokument verwendet werden. Dieses Dokument wird in einen Konverter gegeben, der es in ein SVG umwandelt, das man in Blender benutzen kann.</p>
+        <video src="src/assets/videos/ball video.mp4" controls class="rounded-2xl">
+            Ihr Brwoser unterstützt das Video nicht.
+        </video>
+        <div class="w-full flex justify-end mt-6">
+          <a href="projekte.html" class="text-indigo-950 dark:text-indigo-50 bg-indigo-500 px-5 py-2 rounded-2xl focus:outline-1 dark:bg-indigo-600 outline-indigo-500 dark:outline-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-500 transition hover:-translate-y-0.5 duration-200 ease-in-out hover:scale-[1.02]">Andere Projekte</a>
         </div>
-      </a>
-        <a href="hangman_info.html">
-            <div title="Python Hangman Spiel" class="bg-white dark:bg-slate-700 rounded-2xl hover:bg-slate-600 transition delay-75 duration-500 hover:-translate-y-3 ease-in-out shadow-2xl p-6 flex flex-col items-center">
-                <img src="src/assets/pictures/hangman.webp" alt="Bild von Dosen" class="w-3xl h-3xl rounded-2xl">
-                <h3 class="text-xl font-semibold mb-2 text-indigo-800 dark:text-indigo-200">Getränke Werbung</h3>
-                <p class="text-indigo-900 dark:text-indigo-100">Ein Hangman Spiel, das ich in Python programmiert habe und auf dieser Seite spielbar gemacht habe.</p>
-            </div>
-        </a>
-
-        <a href="meine_seite.html">
-            <div title="Diese Webseite" class="bg-white dark:bg-slate-700 rounded-2xl hover:bg-slate-600 transition delay-75 duration-500 hover:-translate-y-3 ease-in-out shadow-2xl p-6 flex flex-col items-center">
-                <img src="src/assets/pictures/screenshot.webp" alt="Bild von Webseite" class="w-3xl h-3xl rounded-2xl">
-                <h3 class="text-xl font-semibold mb-2 text-indigo-800 dark:text-indigo-200">Diese Webseite</h3>
-                <p class="text-indigo-900 dark:text-indigo-100">Dies ist meine erste richtige Webseite, die ich von null auf programmiert habe.</p>
-            </div>
-        </a>
-
-        <a href="b_raum.html">
-            <div title="Erstes 3D Projekt" class="bg-white dark:bg-slate-700 rounded-2xl hover:bg-slate-600 transition delay-75 duration-500 hover:-translate-y-3 ease-in-out shadow-2xl p-6 flex flex-col items-center">
-                <img src="src/assets/pictures/cozy raum.webp" alt="Bild von Webseite" class="w-3xl h-3xl rounded-2xl">
-                <h3 class="text-xl font-semibold mb-2 text-indigo-800 dark:text-indigo-200">1. Blender Projekt</h3>
-                <p class="text-indigo-900 dark:text-indigo-100">Als erstes keleine Blender Projekt habe ich einen klaien Raum modeliert und texturiert.</p>
-            </div>
-        </a>
-        
-        <a href="voron.html">
-            <div title="voron 0.2" class="bg-white dark:bg-slate-700 rounded-2xl hover:bg-slate-600 transition delay-75 duration-500 hover:-translate-y-3 ease-in-out shadow-2xl p-6 flex flex-col items-center">
-                <img src="src/assets/pictures/voron.webp" alt="Bild von Webseite" class="w-3xl h-3xl rounded-2xl">
-                <h3 class="text-xl font-semibold mb-2 text-indigo-800 dark:text-indigo-200">Voron 0.2</h3>
-                <p class="text-indigo-900 dark:text-indigo-100 ">Anfang 2025 habe ich meinen 2. 3D Drucker zusmmen gabut, einen Voron 0.2. Es hat mir viel spass gemacht ihn zu Bauen und Aufzusetzten.</p>
-            </div>
-        </a>
-
-        
-    </div>
+    </section>
 
   </main>
+
+
+
 
 
   <footer class="bg-gradient-to-r from-blue-400 to-teal-400 dark:from-slate-800 dark:to-indigo-900 rounded-t-3xl shadow-inner py-6 flex items-center justify-between w-full max-w-5xl mx-auto px-6">
