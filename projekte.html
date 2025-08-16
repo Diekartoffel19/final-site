@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucius' Projekte</title>
+    <meta name="description" content="Lucius' Webseite – Projekte, 3D Art, Webentwicklung und mehr. Entdecke meine neuesten Arbeiten und Skills.">
+    <title>Lucius' Webseite</title>
     <link rel="stylesheet" href="src/output.css">
     <link rel="icon" type="image/svg+xml" href="src/assets/favi/app-indicator.svg">
-    <meta name="description" content="Lucius' Projekte im Laufe der Zeit">
-
 </head>
-<body class="bg-indigo-100 dark:bg-gradient-to-b dark:from-neutral-900 dark:to-neutral-800"> <!--farbe von hintergrund-->
+<body class="bg-indigo-100 dark:bg-gradient-to-b dark:from-neutral-900 dark:to-neutral-800 min-h-screen flex flex-col">
 
   <header class="bg-gradient-to-r from-blue-400 to-teal-400 dark:from-slate-800 dark:to-indigo-900 shadow-lg rounded-b-3xl mb-8">
+    <div class="bg-red-500 h-28 w-full flex items-center justify-center">
+      <p class="text-2xl text-center">Diese Seite könnte in den nächsten Tagen für kurze Zeit offline gehen.</p>
+    </div>
     <nav class="flex w-full items-center justify-between max-w-5xl mx-auto py-6 px-4 flex-col gap-4 sm:flex-row sm:gap-0" aria-label="Hauptnavigation">
       <a href="index.html">
         <span class="text-3xl font-bold text-indigo-900 dark:text-white tracking-tight drop-shadow-lg text-center sm:text-left">Lucius' Webseite</span>
@@ -29,78 +31,30 @@
     </nav>
   </header>
 
+  <main class="flex flex-col items-center px-2 flex-grow">
+    <section class="w-full max-w-4xl mx-auto mt-8">
+      <div class="bg-gradient-to-t dark:from-slate-900 dark:to-indigo-950 from-teal-100 to-indigo-200 rounded-3xl shadow-2xl p-10 flex flex-col items-center mb-12 border border-slate-200 dark:border-slate-700">
+        <h1 class="text-4xl text-indigo-950 font-extrabold md:text-5xl dark:text-indigo-200 mb-6 text-center tracking-tight">Meine letzten Projekte</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
+          <div class="bg-gradient-to-br from-teal-100 to-indigo-200 dark:from-slate-800 dark:to-indigo-900 rounded-2xl shadow-xl p-6 flex flex-col items-center ease-in-out hover:scale-[1.03] hover:shadow-2xl transition-all duration-300">
+            <a href="verschluessler.html" title="Python-Textverschlüssler" aria-label="Dosen Werbung" class="w-full flex flex-col items-center">
+              <img src="src/assets/pictures/verschlüssler Bild.webp" alt="Bild von Dose" class="w-full rounded-2xl hover:scale-105 transition-all duration-300 ease-in-out mb-2.5">
+              <h3 class="text-xl font-bold text-indigo-800 dark:text-indigo-300 mb-2.5">Python-Textverschlüssler</h3>
+              <figcaption class="text-indigo-900 dark:text-indigo-200 text-lg text-center">Ein Python-Programm, das beliebigen Text verschlüsselt.</figcaption>
+            </a>
+          </div>
 
-
-  <main class="py-10 px-4 max-w-6xl mx-auto">
-    <h2 class="text-center mb-4 text-3xl font-bold text-indigo-900 dark:text-indigo-300">Meine Projekte</h2>
-
-    
-    <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-      <a href="verschluessler.html">
-        <div title="Verschlüssler" class="bg-white dark:bg-slate-700 rounded-2xl hover:bg-slate-600 transition delay-75 duration-500 hover:-translate-y-3 ease-in-out shadow-2xl p-6 flex flex-col items-center">
-          <img src="src/assets/pictures/mationtacking pic.webp" alt="screenshot" class="w-3xl h-3xl rounded-2xl">
-          <h3 class="text-xl font-semibold mb-2 text-indigo-800 dark:text-indigo-200">Text Verschlüssler</h3>
-          <p class="text-indigo-900 dark:text-indigo-100 ">Ein Python-Programm, das beliebigen Text verschlüsselt.</p>
+          <div class="bg-gradient-to-bl from-teal-100 to-indigo-200 dark:from-slate-800 dark:to-indigo-900 rounded-2xl shadow-xl p-6 flex flex-col items-center ease-in-out hover:scale-[1.03] hover:shadow-2xl transition-all duration-300">
+            <a href="meine_seite.html" title="Meine Seite" aria-label="Dosen Werbung" class="w-full flex flex-col items-center">
+              <img src="src/assets/pictures/screenshot.webp" alt="Bild von Dose" class="w-full rounded-2xl hover:scale-105 transition-all duration-300 ease-in-out mb-2.5">
+              <h3 class="text-xl font-bold text-indigo-800 dark:text-indigo-300 mb-2.5">Meine Eigene Webseite</h3>
+              <figcaption class="text-indigo-900 dark:text-indigo-200 text-lg text-center">Diese Webseite auf der sie sich gerade befinden, ist meine erste eigene Webseite, die ich von null auf erstellt habe.</figcaption>
+            </a>
+          </div>
         </div>
-      </a>
-      <a href="motiontrcking.html">
-        <div title="Motiontracking" class="bg-white dark:bg-slate-700 rounded-2xl hover:bg-slate-600 transition delay-75 duration-500 hover:-translate-y-3 ease-in-out shadow-2xl p-6 flex flex-col items-center">
-          <img src="src/assets/pictures/mationtacking pic.webp" alt="Bild von Motiontrackingsznene" class="w-3xl h-3xl rounded-2xl">
-          <h3 class="text-xl font-semibold mb-2 text-indigo-800 dark:text-indigo-200">Motion tracking</h3>
-          <p class="text-indigo-900 dark:text-indigo-100 ">Mein erster Versuch mit Motion tracking in Blender.</p>
-        </div>
-      </a>
-      <a href="Digitale Uhr.html">
-        <div title="Digitale Uhr" class="bg-white dark:bg-slate-700 rounded-2xl hover:bg-slate-600 transition delay-75 duration-500 hover:-translate-y-3 ease-in-out shadow-2xl p-6 flex flex-col items-center">
-          <img src="src/assets/pictures/digitaluhr.webp" alt="Bild von Digitaluhr" class="w-3xl h-3xl rounded-2xl">
-          <h3 class="text-xl font-semibold mb-2 text-indigo-800 dark:text-indigo-200">Uhr-Animation</h3>
-          <p class="text-indigo-900 dark:text-indigo-100 ">Eine animierte Digitaluhr.</p>
-        </div>
-      </a>
-        <a href="Musik Animationen.html">
-        <div title="Musik Animation" class="bg-white dark:bg-slate-700 rounded-2xl hover:bg-slate-600 transition delay-75 duration-500 hover:-translate-y-3 ease-in-out shadow-2xl p-6 flex flex-col items-center">
-          <img src="src/assets/pictures/0020.webp" alt="Bild von Webseite" class="w-3xl h-3xl rounded-2xl">
-          <h3 class="text-xl font-semibold mb-2 text-indigo-800 dark:text-indigo-200">Musik Animation</h3>
-          <p class="text-indigo-900 dark:text-indigo-100 ">Meine Musik-Animationen, die mit Blender gemacht wurden.</p>
-        </div>
-      </a>
-        <a href="hangman_info.html">
-            <div title="Python Hangman Spiel" class="bg-white dark:bg-slate-700 rounded-2xl hover:bg-slate-600 transition delay-75 duration-500 hover:-translate-y-3 ease-in-out shadow-2xl p-6 flex flex-col items-center">
-                <img src="src/assets/pictures/hangman.webp" alt="Bild von Dosen" class="w-3xl h-3xl rounded-2xl">
-                <h3 class="text-xl font-semibold mb-2 text-indigo-800 dark:text-indigo-200">Getränke Werbung</h3>
-                <p class="text-indigo-900 dark:text-indigo-100">Ein Hangman Spiel, das ich in Python programmiert habe und auf dieser Seite spielbar gemacht habe.</p>
-            </div>
-        </a>
-
-        <a href="meine_seite.html">
-            <div title="Diese Webseite" class="bg-white dark:bg-slate-700 rounded-2xl hover:bg-slate-600 transition delay-75 duration-500 hover:-translate-y-3 ease-in-out shadow-2xl p-6 flex flex-col items-center">
-                <img src="src/assets/pictures/screenshot.webp" alt="Bild von Webseite" class="w-3xl h-3xl rounded-2xl">
-                <h3 class="text-xl font-semibold mb-2 text-indigo-800 dark:text-indigo-200">Diese Webseite</h3>
-                <p class="text-indigo-900 dark:text-indigo-100">Dies ist meine erste richtige Webseite, die ich von null auf programmiert habe.</p>
-            </div>
-        </a>
-
-        <a href="b_raum.html">
-            <div title="Erstes 3D Projekt" class="bg-white dark:bg-slate-700 rounded-2xl hover:bg-slate-600 transition delay-75 duration-500 hover:-translate-y-3 ease-in-out shadow-2xl p-6 flex flex-col items-center">
-                <img src="src/assets/pictures/cozy raum.webp" alt="Bild von Webseite" class="w-3xl h-3xl rounded-2xl">
-                <h3 class="text-xl font-semibold mb-2 text-indigo-800 dark:text-indigo-200">1. Blender Projekt</h3>
-                <p class="text-indigo-900 dark:text-indigo-100">Als erstes keleine Blender Projekt habe ich einen klaien Raum modeliert und texturiert.</p>
-            </div>
-        </a>
-        
-        <a href="voron.html">
-            <div title="voron 0.2" class="bg-white dark:bg-slate-700 rounded-2xl hover:bg-slate-600 transition delay-75 duration-500 hover:-translate-y-3 ease-in-out shadow-2xl p-6 flex flex-col items-center">
-                <img src="src/assets/pictures/voron.webp" alt="Bild von Webseite" class="w-3xl h-3xl rounded-2xl">
-                <h3 class="text-xl font-semibold mb-2 text-indigo-800 dark:text-indigo-200">Voron 0.2</h3>
-                <p class="text-indigo-900 dark:text-indigo-100 ">Anfang 2025 habe ich meinen 2. 3D Drucker zusmmen gabut, einen Voron 0.2. Es hat mir viel spass gemacht ihn zu Bauen und Aufzusetzten.</p>
-            </div>
-        </a>
-
-        
-    </div>
-
+      </div>
+    </section>
   </main>
-
 
   <footer class="bg-gradient-to-r from-blue-400 to-teal-400 dark:from-slate-800 dark:to-indigo-900 rounded-t-3xl shadow-inner py-6 flex items-center justify-between w-full max-w-5xl mx-auto px-6">
     <span class="text-indigo-900 dark:text-white font-semibold">Lucius Webseite</span>
